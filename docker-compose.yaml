@@ -1,13 +1,13 @@
+
 version: '3'
 
 services:
   db:
-    image: mongo:8  # Asegúrate de usar una versión correcta de MongoDB
-    container_name: nest-pokemon-db  # Asigna el nombre que quieras al contenedor
+    image: mongo:8
     restart: always
     ports:
-      - "27017:27017"
+      - 27017:27017
     environment:
-      MONGO_INITDB_DATABASE: nest-pokemon  # Usa MONGO_INITDB_DATABASE para crear la base
+      MONGODB_DATABASE: nest-pokemon
     volumes:
       - ./mongo:/data/db
