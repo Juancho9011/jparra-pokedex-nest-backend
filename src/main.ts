@@ -23,6 +23,6 @@ async function bootstrap() {
 
 
   await app.listen(process.env.PORT);
-  log("App runnin in port ", process.env.PORT)
+  log("App runnin in port ... ", process.env.PORT)
 }
 bootstrap();
